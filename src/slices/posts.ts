@@ -21,14 +21,9 @@ const postSlice = createSlice({
     },
     addPost: (state, { payload }) => {
       state.posts.push(payload)
-    },
-    filterPosts: (state, { payload }) => {
-      if (payload !== "") {
-        state.posts = state.posts.filter((post) => post.name.includes(payload) || post.description.includes(payload))
-      }
     }
   },
 })
 
 export const postReducer = postSlice.reducer
-export const { getPosts, addPost, deletePost, filterPosts } = postSlice.actions
+export const { getPosts, addPost, deletePost } = postSlice.actions

@@ -38,6 +38,10 @@ module.exports = {
             type: 'test',
             release: 'patch',
           },
+          {
+            type: 'build',
+            release: 'patch',
+          },
         ]
       },
     ],

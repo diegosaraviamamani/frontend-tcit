@@ -1,5 +1,7 @@
 # Changelog
 
+## [1.4.0](https://github.com/diegosaraviamamani/frontend-tcit/compare/v1.3.3...v1.4.0) (2022-03-17)
+
 ### [1.3.3](https://github.com/diegosaraviamamani/frontend-tcit/compare/v1.3.2...v1.3.3) (2022-03-17)
 
 

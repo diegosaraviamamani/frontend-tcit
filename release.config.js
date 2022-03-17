@@ -30,6 +30,10 @@ module.exports = {
             type: 'ci',
             release: 'patch',
           },
+          {
+            type: 'perf',
+            release: 'patch',
+          },
         ]
       },
     ],

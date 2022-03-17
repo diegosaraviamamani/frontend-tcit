@@ -8,27 +8,21 @@ module.exports = {
     [
       '@semantic-release/commit-analyzer',
       {
-        preset: 'conventionalcommits',
-        rules: {
-          type: 'hotfix',
-          release: 'patch',
-        }
+        preset: 'angular',
+        releaseRules: [
+          {
+            type: 'docs',
+            release: 'patch',
+          },
+        ]
       },
     ],
-    [
-      '@semantic-release/release-notes-generator',
-      {
-        preset: 'conventionalcommits',
-      },
-    ],
+    '@semantic-release/release-notes-generator',
     [
       '@semantic-release/changelog',
       {
         changelogFile: 'CHANGELOG.md',
         changelogTitle: '# Changelog',
-        changelogGeneratorOpts: {
-          preset: 'conventionalcommits',
-        },
       },
     ],
     [

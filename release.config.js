@@ -16,6 +16,8 @@ module.exports = {
         { type: 'ci', release: 'patch' },
         { type: 'docs', release: 'patch' },
         { type: 'hotfix', release: 'minor' },
+        { type: 'feat', release: 'minor' },
+        { type: 'fix', release: 'patch' },
         { type: 'perf', release: 'patch' },
         { type: 'refactor', release: 'patch' },
         { type: 'style', release: 'patch' },

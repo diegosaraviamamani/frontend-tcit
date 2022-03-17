@@ -15,6 +15,7 @@ module.exports = {
         { type: 'chore', release: 'patch' },
         { type: 'ci', release: 'patch' },
         { type: 'docs', release: 'patch' },
+        { type: 'hotfix', release: 'minor' },
         { type: 'perf', release: 'patch' },
         { type: 'refactor', release: 'patch' },
         { type: 'style', release: 'patch' },
@@ -42,7 +43,7 @@ module.exports = {
         ],
         writerOpts: {
           commitsSort: ['subject', 'scope'],
-        }
+        },
       }
     }],
     ['@semantic-release/changelog', {

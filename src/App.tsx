@@ -5,11 +5,10 @@ import { TStore } from './store'
 import * as PostService from './post.service'
 
 function App() {
-  const [name, setName] = React.useState<string>('')
-  const [description, setDescription] = React.useState<string>('')
+  const [task, setTask] = React.useState({ name: '', description: '' })
   const [filter, setFilter] = React.useState<string>('')
   const [hasFilter, setHasFilter] = React.useState<boolean>(false)
-  const isFormDisabled = name === '' || description === ''
+  const isFormDisabled = task.name === '' || task.description === ''
 
   const dispatch = useDispatch()
   const { posts } = useSelector((state: TStore) => state.postReducer)
@@ -21,23 +20,14 @@ function App() {
   }, [dispatch])
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target
-    if (name === 'name') {
-      setName(value)
-    } else if (name === 'description') {
-      setDescription(value)
-    } else if (name === 'filter') {
-      setHasFilter(false)
-      setFilter(value)
-    }
+    setTask({ ...task, [e.target.name]: e.target.value })
   }
 
   const handleSubmit = async () => {
     if (!isFormDisabled) {
-      const newPost = await PostService.addPost({ name, description })
+      const newPost = await PostService.addPost(task)
       dispatch(addPost(newPost))
-      setName('')
-      setDescription('')
+      setTask({ name: '', description: '' })
     }
   }
 
@@ -71,7 +61,10 @@ function App() {
           name="filter"
           className="form-control mt-3"
           placeholder="Filtro"
-          onChange={handleChange}
+          value={filter}
+          onChange={(e) => {
+            setFilter(e.target.value)
+          }}
         />
         <button className="mt-3 btn btn-primary" onClick={handleFilter}>
           Filtrar
@@ -112,7 +105,7 @@ function App() {
           <input
             name="name"
             className="form-control"
-            value={name}
+            value={task.name}
             onChange={handleChange}
           />
         </div>
@@ -123,7 +116,7 @@ function App() {
           <input
             name="description"
             className="form-control"
-            value={description}
+            value={task.description}
             onChange={handleChange}
           />
         </div>

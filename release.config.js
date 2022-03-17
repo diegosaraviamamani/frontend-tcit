@@ -9,6 +9,10 @@ module.exports = {
       '@semantic-release/commit-analyzer',
       {
         preset: 'conventionalcommits',
+        rules: {
+          type: 'hotfix',
+          release: 'patch',
+        }
       },
     ],
     [

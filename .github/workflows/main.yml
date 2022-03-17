@@ -20,10 +20,9 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 14.17
-
-      - name: Install Dependencies
-        run: yarn install
+          node-version: 16.x
+      - name: Install Release Dependencies
+        run: yarn add -D semantic-release@latest @semantic-release/changelog@latest @semantic-release/git@latest
 
       - name: Semantic Release
         env:

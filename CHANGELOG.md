@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/diegosaraviamamani/frontend-tcit/compare/v1.4.0...v1.5.0) (2022-03-17)
+
+
+### Features
+
+* hotfix added to notes generator ([c34f07d](https://github.com/diegosaraviamamani/frontend-tcit/commit/c34f07d8ba022d1524a5e6d3e435f8150be77190))
+
 ## [1.4.0](https://github.com/diegosaraviamamani/frontend-tcit/compare/v1.3.3...v1.4.0) (2022-03-17)
 
 ### [1.3.3](https://github.com/diegosaraviamamani/frontend-tcit/compare/v1.3.2...v1.3.3) (2022-03-17)

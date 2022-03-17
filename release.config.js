@@ -6,6 +6,9 @@ module.exports = {
   ],
   plugins: [
     ['@semantic-release/commit-analyzer', {
+      parserOpts: {
+        noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES', 'BREAKING CHANGES:', 'BREAKING CHANGES: '],
+      },
       preset: 'angular',
       releaseRules: [
         { type: 'build', release: 'patch' },
@@ -17,15 +20,15 @@ module.exports = {
         { type: 'style', release: 'patch' },
         { type: 'test', release: 'patch' },
       ],
-      parserOpts: {
-        noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES', 'BREAKING CHANGES:', 'BREAKING CHANGES: '],
-      }
     },
     ],
     ['@semantic-release/release-notes-generator', {
+      parserOpts: {
+        noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES', 'BREAKING CHANGES:', 'BREAKING CHANGES: '],
+      },
       preset: 'conventionalcommits',
       presetConfig: {
-        releaseRules: [
+        types: [
           { type: 'build', section: 'Build System', hidden: false },
           { type: 'chore', section: 'Build System', hidden: false },
           { type: 'ci', section: 'Continuous Integration', hidden: false },
@@ -37,9 +40,9 @@ module.exports = {
           { type: 'style', section: 'Styles', hidden: false },
           { type: 'test', section: 'Tests', hidden: false },
         ],
-        parserOpts: {
-          noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES', 'BREAKING CHANGES:', 'BREAKING CHANGES: '],
-        }
+        writerOpts: {
+          commitsSort: ['subject', 'scope'],
+        },
       }
     }],
     ['@semantic-release/changelog', {

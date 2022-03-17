@@ -34,6 +34,10 @@ module.exports = {
             type: 'perf',
             release: 'patch',
           },
+          {
+            type: 'test',
+            release: 'patch',
+          },
         ]
       },
     ],

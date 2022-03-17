@@ -42,7 +42,7 @@ module.exports = {
         ],
         writerOpts: {
           commitsSort: ['subject', 'scope'],
-        },
+        }
       }
     }],
     ['@semantic-release/changelog', {

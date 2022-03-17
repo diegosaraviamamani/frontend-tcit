@@ -36,6 +36,7 @@ module.exports = {
           { type: 'docs', section: 'Documentation', hidden: false },
           { type: 'feat', section: 'Features', hidden: false },
           { type: 'fix', section: 'Bug Fixes', hidden: false },
+          { type: 'hotfix', section: 'Hotfixes', hidden: false },
           { type: 'perf', section: 'Performance Improvements', hidden: false },
           { type: 'refactor', section: 'Code Refactoring', hidden: false },
           { type: 'style', section: 'Styles', hidden: false },

@@ -15,10 +15,12 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
           node-version: 16.x
+
       - name: Install Release Dependencies
         run: yarn add -D semantic-release@latest @semantic-release/changelog@latest @semantic-release/git@latest conventional-changelog-conventionalcommits@latest
 

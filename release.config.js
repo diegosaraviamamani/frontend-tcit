@@ -23,7 +23,7 @@ module.exports = {
     },
     ],
     ['@semantic-release/release-notes-generator', {
-      preset: 'angular',
+      preset: 'conventionalcommits',
       presetConfig: {
         releaseRules: [
           { type: 'build', section: 'Build System', hidden: false },

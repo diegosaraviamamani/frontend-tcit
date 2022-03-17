@@ -18,6 +18,10 @@ module.exports = {
             type: 'refactor',
             release: 'patch',
           },
+          {
+            type: 'style',
+            release: 'patch',
+          },
         ]
       },
     ],

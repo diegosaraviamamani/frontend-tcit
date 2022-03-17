@@ -14,6 +14,10 @@ module.exports = {
             type: 'docs',
             release: 'patch',
           },
+          {
+            type: 'refactor',
+            release: 'patch',
+          },
         ]
       },
     ],

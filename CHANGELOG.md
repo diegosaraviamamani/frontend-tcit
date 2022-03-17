@@ -1,5 +1,17 @@
 # Changelog
 
+### [1.3.3](https://github.com/diegosaraviamamani/frontend-tcit/compare/v1.3.2...v1.3.3) (2022-03-17)
+
+
+### Bug Fixes
+
+* fix semicolon ([7142cbb](https://github.com/diegosaraviamamani/frontend-tcit/commit/7142cbbb8d702833b00242bcebc91fb8ad49d1c4))
+
+
+### Styles
+
+* style ([47d98ca](https://github.com/diegosaraviamamani/frontend-tcit/commit/47d98cafb5740badf5e4622b98ef1c6d03767b37))
+
 ### [1.3.2](https://github.com/diegosaraviamamani/frontend-tcit/compare/v1.3.1...v1.3.2) (2022-03-17)
 
 

@@ -6,6 +6,9 @@ module.exports = {
   ],
   plugins: [
     ['@semantic-release/commit-analyzer', {
+      parserOpts: {
+        noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES', 'BREAKING CHANGES:', 'BREAKING CHANGES: '],
+      },
       preset: 'angular',
       releaseRules: [
         { breaking: true, release: 'major'},
@@ -21,9 +24,6 @@ module.exports = {
         { type: 'style', release: 'patch' },
         { type: 'test', release: 'patch' },
       ],
-      parserOpts: {
-        noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES', 'BREAKING CHANGES:', 'BREAKING CHANGES: '],
-      },
     }],
     ['@semantic-release/release-notes-generator', {
       parserOpts: {

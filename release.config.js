@@ -11,6 +11,9 @@ module.exports = {
       },
       preset: 'angular',
       releaseRules: [
+        { breaking: true, release: 'major'},
+        { type: 'feat', release: 'minor' },
+        { type: 'hotfix', release: 'minor' },
         { type: 'build', release: 'patch' },
         { type: 'chore', release: 'patch' },
         { type: 'ci', release: 'patch' },
@@ -20,9 +23,6 @@ module.exports = {
         { type: 'refactor', release: 'patch' },
         { type: 'style', release: 'patch' },
         { type: 'test', release: 'patch' },
-        { type: 'hotfix', release: 'minor' },
-        { type: 'feat', release: 'major' },
-        { type: 'BREAKING CHANGE', release: 'major' },
       ],
     }],
     ['@semantic-release/release-notes-generator', {

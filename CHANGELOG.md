@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.0.0](https://github.com/diegosaraviamamani/frontend-tcit/compare/v1.6.2...v2.0.0) (2022-03-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* release config
+
+release config
+
+### Code Refactoring
+
+* :art: arreglando config release ([5d23939](https://github.com/diegosaraviamamani/frontend-tcit/commit/5d23939abc8d6eeb0d1ad7fb1c6bc4a9fdf338d0))
+
 ### [1.6.2](https://github.com/diegosaraviamamani/frontend-tcit/compare/v1.6.1...v1.6.2) (2022-03-22)
 
 

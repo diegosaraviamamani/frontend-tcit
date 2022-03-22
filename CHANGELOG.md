@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.6.1](https://github.com/diegosaraviamamani/frontend-tcit/compare/v1.6.0...v1.6.1) (2022-03-22)
+
+
+### Styles
+
+* endline deleted ([#3](https://github.com/diegosaraviamamani/frontend-tcit/issues/3)) ([037f975](https://github.com/diegosaraviamamani/frontend-tcit/commit/037f975510c2b115bb8214cdecf96746c5f003d5))
+
 ## [1.6.0](https://github.com/diegosaraviamamani/frontend-tcit/compare/v1.5.1...v1.6.0) (2022-03-17)
 
 

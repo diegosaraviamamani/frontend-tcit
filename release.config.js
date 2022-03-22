@@ -15,13 +15,14 @@ module.exports = {
         { type: 'chore', release: 'patch' },
         { type: 'ci', release: 'patch' },
         { type: 'docs', release: 'patch' },
-        { type: 'hotfix', release: 'minor' },
-        { type: 'feat', release: 'minor' },
         { type: 'fix', release: 'patch' },
         { type: 'perf', release: 'patch' },
         { type: 'refactor', release: 'patch' },
         { type: 'style', release: 'patch' },
         { type: 'test', release: 'patch' },
+        { type: 'hotfix', release: 'minor' },
+        { type: 'feat', release: 'major' },
+        { type: 'BREAKING CHANGE', release: 'major' },
       ],
     }],
     ['@semantic-release/release-notes-generator', {
@@ -31,6 +32,7 @@ module.exports = {
       preset: 'conventionalcommits',
       presetConfig: {
         types: [
+          { type: 'BREAKING CHANGE', section: 'Breaking Changes', hidden: false },
           { type: 'build', section: 'Build System', hidden: false },
           { type: 'chore', section: 'Build System', hidden: false },
           { type: 'ci', section: 'Continuous Integration', hidden: false },

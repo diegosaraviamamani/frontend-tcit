@@ -23,8 +23,7 @@ module.exports = {
         { type: 'style', release: 'patch' },
         { type: 'test', release: 'patch' },
       ],
-    },
-    ],
+    }],
     ['@semantic-release/release-notes-generator', {
       parserOpts: {
         noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES', 'BREAKING CHANGES:', 'BREAKING CHANGES: '],

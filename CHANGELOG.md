@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.6.2](https://github.com/diegosaraviamamani/frontend-tcit/compare/v1.6.1...v1.6.2) (2022-03-22)
+
+
+### Performance Improvements
+
+* release ([40a5927](https://github.com/diegosaraviamamani/frontend-tcit/commit/40a5927a2643f9ddc1716c2bfc9ba6a140e1f0d8))
+
 ### [1.6.1](https://github.com/diegosaraviamamani/frontend-tcit/compare/v1.6.0...v1.6.1) (2022-03-22)
 
 

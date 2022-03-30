@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.5.2](https://github.com/diegosaraviamamani/frontend-tcit/compare/v1.5.1...v1.5.2) (2022-03-30)
+
+
+### Bug Fixes
+
+* env file ([8a6233e](https://github.com/diegosaraviamamani/frontend-tcit/commit/8a6233eaf648e3b29d846b3abeaa7a184a41423b))
+
 ### [1.6.1](https://github.com/diegosaraviamamani/frontend-tcit/compare/v1.6.0...v1.6.1) (2022-03-22)
 
 

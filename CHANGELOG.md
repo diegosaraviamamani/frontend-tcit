@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.5.4](https://github.com/diegosaraviamamani/frontend-tcit/compare/v1.5.3...v1.5.4) (2022-03-30)
+
+
+### Code Refactoring
+
+* config release ([05b60c4](https://github.com/diegosaraviamamani/frontend-tcit/commit/05b60c42390f0ae65119e01ff105e5359ffb16c5))
+
 ### [1.5.3](https://github.com/diegosaraviamamani/frontend-tcit/compare/v1.5.2...v1.5.3) (2022-03-30)
 
 

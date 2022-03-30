@@ -1,9 +1,6 @@
 //semantic-release export config object
 module.exports = {
-  branches: [
-    'main',
-    'develop',
-  ],
+  branches: ['main','develop'],
   plugins: [
     ['@semantic-release/commit-analyzer', {
       parserOpts: {
